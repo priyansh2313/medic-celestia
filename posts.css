@@ -1,0 +1,172 @@
+/* Reset some default browser styles */
+html, body, div, h1, h2, p, ul, li, textarea, button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Global styles */
+  body {
+    
+        background-image: url('./images/community.jpg');
+        background-size: cover; /* Scale the image to cover the entire background */
+        background-repeat: no-repeat; /* Prevent the image from repeating */
+        background-attachment: fixed; /* Keep the background fixed when scrolling */
+      
+      
+  }
+  
+  header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s;
+  }
+  
+  #community {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+
+
+  @keyframes scrollText {
+    0% {
+        transform: translateX(50%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+  #post-form {
+    margin-bottom: 20px;
+    animation: slideInUp 0.5s;
+  }
+  
+  #post-content {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+    transition: border-color 0.3s;
+  }
+  
+  #post-content:focus {
+    border-color: #007bff;
+  }
+  
+  #post-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    margin-left:200px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #post-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .message {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    animation: fadeInUp 0.5s;
+  }
+  
+  .message.user{
+    background-color: #4caf50;
+    color: white;
+    animation: slideInRight 0.5s;
+  }
+  
+  .message.assistant{
+    background-color: #007bff;
+    color: white;
+    animation: slideInLeft 0.5s;
+  }
+  
+  .timestamp {
+    font-size: 0.8rem;
+    color: #888;
+  }
+  
+  /* Add additional styles as needed for user profiles, comments, likes, etc. */
+  
+  /* Media queries for responsive design */
+  @media screen and (max-width: 600px) {
+    body {
+      font-size: 14px;
+    }
+  
+    #community {
+      padding: 10px;
+    }
+  
+    /* Add more responsive styles here */
+  }
+  
+  /* Keyframe animations */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInUp {
+    0% {
+      transform: translateY(10px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInRight {
+    0% {
+      transform: translateX(10px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInLeft {
+    0% {
+      transform: translateX(-10px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  

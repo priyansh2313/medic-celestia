@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>medic -celestia</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/03431c3ef8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+    <div class="container">
+        <div class="form-box">
+            <h1 id="title">WELCOME, ON BOARD</h1>
+            <form>
+                <div class="input-group">
+                    <div class="input-field" id="namefield">
+                        <i class="fa-regular fa-user"></i>
+                        <input id="name-holder"  type="text" placeholder="Name">
+                    </div>
+                    <div class="input-field">  
+                        <i class="fa-regular fa-envelope"></i> 
+                        <input id="email-holder" type="email" placeholder="EMAIL">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-regular fa-lock"></i>
+                        <input  id="password-holder" type="password" placeholder="password">
+                    </div>
+                    <p>Lost password? <a href="https://support.google.com/accounts/answer/41078?hl=en&co=GENIE.Platform%3DDesktop">click here</a></p>
+                </div>
+                <div class="btn-field">
+                    <button type="button" id="signupbtn"><a href="./index.html"> Sign Up</a></button>
+                    <button type="button" id="signinbtn" class="disable"><a href="./index.html">Sign in</a></button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        let signupbtn = document.getElementById("signupbtn");
+        let signinbtn = document.getElementById("signinbtn");
+        let namefield = document.getElementById("namefield");
+        let title = document.getElementById("title");
+        signinbtn.onclick = function(){
+            namefield.style.maxHeight = "0";
+            title.innerHTML="sign in";
+            signupbtn.classlist.add("disable");
+            signinbtn.classlist.remove("disable");
+        }
+
+        signupbtn.onclick = function(){
+            namefield.style.minHeight = "60";
+            title.innerHTML="sign Up";
+            signupbtn.classlist.remove("disable");
+            signinbtn.classlist.add("disable");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+
+h1{
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+    font-size:50px;
+    text-align: center;
+}
+
+
+.mood-section{
+    display:grid;
+    grid-template-columns:1fr 1fr ;
+    column-gap:20px;
+    row-gap:40px;
+    margin-top:170px;
+    text-align: center;
+
+}
+
+.problem{
+    display:inline-block;
+    width:50px;
+}
+
+.loc-pic{
+    width:70%;
+}
+
+
+#dep{
+    background-color:blanchedalmond;
+    border-radius:20px;
+    transition:border 0.69s;
+    width:600px;
+}
+
+#anx{
+    background-color:blanchedalmond;
+    border-radius:20px;
+    width:600px;
+}
+
+#ang{
+    background-color:blanchedalmond;
+    border-radius:20px;
+    width:600px;
+}
+
+#lac{
+    background-color:blanchedalmond;
+    border-radius:20px;
+    width:600px;
+}
+
+
+.dep-word{
+    margin-left:100px;
+    text-align: center;
+}
+
+#dep:hover{
+    border:2px solid red;
+    cursor:pointer;
+}
+
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(50%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}

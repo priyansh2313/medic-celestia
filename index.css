@@ -1,0 +1,303 @@
+
+body{
+    background-image: url(./images/img2.jpg),url(./images/community.jpg);
+    background-repeat: no-repeat;
+}
+
+
+.background-image{
+    background-size:contain;
+    background-repeat: no-repeat, no-repeat; 
+}
+
+.h1{
+    font-family: 'Oswald', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Varela Round', sans-serif;
+}
+
+#quote-1{
+    font-size:large;
+}
+.logo-pic{
+    
+    padding: 0px;
+    margin-left: 470px;
+    width:30%;
+    margin-top:79px;
+    
+    
+
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(50%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.background-image{
+    display:inline-block;
+    margin-top:0px;
+    padding:0px;
+}
+
+
+
+
+
+.quote-box {
+    width: 50%; /* Adjust the width as needed */
+    height:90px;
+    margin: 100px auto; /* This centers the div horizontally */
+    text-align: center; /* This centers the content (text) within the div */
+    background-color:white;
+    padding:30px;
+    opacity:0.75;
+    box-shadow: 1px 1px 9px black;
+    animation:slider 7s infinite linear ;
+    
+}
+
+.quotery{
+    font-size:23px;
+}
+
+
+
+.section-box{
+    display:grid;
+    grid-template-columns:1fr 1fr ;
+    column-gap:16px;
+    row-gap:40px;
+    margin-top:310px;
+    text-align: center;
+    text-decoration:none;
+    }
+
+
+
+.b1{
+    animation: ani1 10s infinite;
+}
+
+.b2{
+    animation: ani2 10s infinite;
+}
+
+.b3{
+    animation: ani3 10s infinite;
+}
+
+.b4{
+    animation: ani4 10s infinite;
+}
+
+.b5{
+    animation: anil5 10s infinite;
+}
+
+
+
+@keyframes anil1{
+    0%{ 
+        opacity: 0;
+    }
+
+    10%{
+        opacity:1;
+    }
+
+    20%{
+        opacity: 0;
+    }
+}
+
+
+
+@keyframes anil2{
+    20%{ 
+        opacity: 0;
+    }
+
+    30%{
+        opacity:1;
+    }
+
+    40%{
+        opacity: 0;
+    }
+}
+
+@keyframes anil3{
+    40%{ 
+        opacity: 0;
+    }
+
+    50%{
+        opacity:1;
+    }
+
+    60%{
+        opacity: 0;
+    }
+}
+
+@keyframes anil4{
+    70%{ 
+        opacity: 0;
+    }
+
+    80%{
+        opacity:1;
+    }
+
+    90%{
+        opacity: 0;
+    }
+}
+
+@keyframes anil4{
+    90%{ 
+        opacity: 0;
+    }
+
+    100%{
+        opacity:1;
+    }
+
+    
+}
+
+a {
+    text-decoration: none;
+  }
+
+
+
+
+
+.bn45 {
+    width: 170px;
+    height: 50px;
+    margin-top:300px;
+  }
+
+
+  .btn41-43 {
+    padding: 10px 25px;
+    font-family: 'Oswald', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Varela Round', sans-serif;
+    font-size:30px;
+    height:80px;
+    background-color:bisque;
+    opacity:0.8;
+    outline: none !important;
+    cursor: pointer;
+    width:70%;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    border-radius:19px;
+  }
+  
+  .btn-43 {
+    
+    z-index: 1;
+    color: white;
+  }
+  
+  .btn-43:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    border-radius:19px;
+    height: 0;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: rgb(255, 255, 255);
+    transition: all 0.3s ease;
+  }
+  
+  .btn-43:hover {
+    color: rgb(0, 0, 0);
+   
+  }
+  
+  .btn-43:hover:after {
+    top: auto;
+    bottom: 0;
+    height: 100%;
+    background: radial-gradient(circle, rgba(244,251,63,1) 0%, rgba(235,246,66,1) 6%, rgba(220,237,72,1) 16%, rgba(174,212,88,1) 46%, rgba(172,213,88,1) 47%, rgba(192,222,82,1) 100%, rgba(92,252,70,0.9164915966386554) 100%);
+
+  }
+
+
+  /* The sidebar menu */
+.sidebar {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  }
+  
+  /* The sidebar links */
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* The button used to open the sidebar */
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s; /* If you want a transition effect */
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }

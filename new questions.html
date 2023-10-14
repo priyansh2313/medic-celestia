@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Score</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mental Health Score</h1>
+        <p>Answer the following questions honestly to assess your mental health.</p>
+        <form id="mentalHealthForm">
+            <div class="question">
+                <label for="q1">Question 1: How often do you feel anxious or stressed?</label>
+                <select id="q1" name="q1">
+                    <option value="0">Never</option>
+                    <option value="1">Rarely</option>
+                    <option value="2">Sometimes</option>
+                    <option value="3">Often</option>
+                    <option value="4">Always</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="q2">Question 2: Do you have trouble sleeping?</label>
+                <select id="q2" name="q2">
+                    <option value="0">No</option>
+                    <option value="1">Rarely</option>
+                    <option value="2">Sometimes</option>
+                    <option value="3">Often</option>
+                    <option value="4">Always</option>
+                </select>
+            </div>
+            <!-- Add more questions as needed -->
+            <div class="question">
+                <label for="qN">Question N: Your Question Here</label>
+                <select id="qN" name="qN">
+                    <option value="0">No</option>
+                    <option value="1">Rarely</option>
+                    <option value="2">Sometimes</option>
+                    <option value="3">Often</option>
+                    <option value="4">Always</option>
+                </select>
+            </div>
+            <button type="button" id="calculateButton">Calculate Score</button>
+        </form>
+        <div id="results"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

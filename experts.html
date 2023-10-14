@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Text-Affective Title</title>
+    <style>
+        /* Define the animation for the text affect */
+        @keyframes textAffect {
+            0% {
+                transform: scale(1);
+                color: #ff5733; /* Initial text color */
+            }
+            50% {
+                transform: scale(1.2); /* Scale text up at 50% of the animation */
+                color: #3498db; /* Color change at 50% of the animation */
+            }
+            100% {
+                transform: scale(1);
+                color: #ff5733; /* Return to the initial text color */
+            }
+        }
+
+        /* Customize the title styles */
+        .animated-title {
+            font-size: 48px;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase; /* Make text uppercase */
+            padding: 20px;
+            margin: 0 auto; /* Center align horizontally */
+            width: 80%; /* Set a maximum width */
+            animation: textAffect 2s infinite; /* Apply the text affect animation */
+        }
+    </style>
+    <title>Breaking News Scrolling Effect</title>
+    <style>
+        /* Container for the breaking news */
+        .breaking-news-container {
+            width: 0%;
+            overflow: hidden;
+            position: relative;
+            background-color: #333;
+            color: #fff;
+            border: 1px solid #fff; /* Add a white border */
+        }
+
+        /* Inner container for the scrolling text */
+        .breaking-news-text {
+            white-space: nowrap;
+            animation: scrollText 10s linear infinite; /* Adjust the duration as needed */
+            padding: 5px; /* Add padding for spacing between the text and border */
+            font-weight: bold;
+            border-radius: 100px; /* Rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow */
+            margin: 100 auto; /* Center align horizontally */
+            width: 80%; /* Set a maximum width */
+            
+        }
+        /* Keyframes for scrolling text */
+        @keyframes scrollText {
+            0% {
+                transform: translateX(50%);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="experts.css">
+</head>
+<script src="experts.js" defer></script>
+<body>
+<header>
+    <div class="animated-title">Meet Our Experts</div>
+    <div class="breaking-news-text">
+        </strong> FIRST SESSION FREE...Benefiting from healthcare shouldn’t be a matter of luck.
+    </div>
+       
+<label for="filterByDisorder">Filter by Disorder:</label>
+<select id="filterByDisorder">
+    <option value="">All</option>
+    <option value="Anxiety">Anxiety</option>
+    <option value="Depression">Depression</option>
+    <option value="Stress">Stress</option>
+    <!-- Add more disorder options as needed -->
+</select>
+
+<section class="experts" id="expertList">
+    <!-- Experts will be dynamically added here using JavaScript -->
+</section>
+
+<!-- Appointment Modal -->
+<div id="appointmentModal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="modalClose">&times;</span>
+        <h3>Book an Appointment</h3>
+        <form id="appointmentForm">
+            <label for="patientName">Your Name:</label>
+            <input type="text" id="patientName" required>
+            <label for="patientPhone">Phone Number:</label>
+            <input type="tel" id="patientPhone" required>
+    
+                <label for="appointmentDate">Appointment Date:</label>
+                <input type="date" id="appointmentDate" required>
+                
+                <button type="submit" class="appointment-button">Submit</button>
+        </form>
+    </div>
+</div>
+</header>   
+
+</body>
+</html>
